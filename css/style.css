@@ -1,10 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
+    font-family: 'Montserrat';
     height: 100vh;
     background-color: #76045D;
     display: grid;
@@ -22,7 +17,10 @@ header {
 
 main {
     grid-area: main;
-    background-color: palegreen;
+    display: grid;
+    grid-template-areas: "description product social";
+    grid-template-columns: 380px 1fr 48px;
+    padding: 0 100px;
 }
 
 footer {
